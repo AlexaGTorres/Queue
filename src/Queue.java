@@ -49,7 +49,17 @@ public class Queue
             }
         }//End add method
 
+        public int remove ()
+        {
+            int data = head.data;
+            head = head.next;
 
+            if (head == null)
+            {
+                tail = null;
+            }
+            return data;
+        }//End remove method
 
         //toString
 
