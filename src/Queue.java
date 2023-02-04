@@ -22,10 +22,10 @@ public class Queue
             this.data = data;
         }
 
-//        public boolean isEmpty()
-//        {
-//            return head = null;
-//        }
+        public boolean isEmpty()
+        {
+            return head == null;
+        }
 
         public int peek ()
         {
