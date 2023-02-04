@@ -8,12 +8,6 @@ public class Queue
     {
         return head == null;
     }
-
-    public int peek ()
-    {
-        return head.data;
-    }
-
     public void add (int data)
     {
         Node node = new Node(data);
