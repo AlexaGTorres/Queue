@@ -8,5 +8,14 @@ public class Main
         myQueue.add(18);
 
         myQueue.showList();
+        System.out.println("\nRemove 1");
+
+        myQueue.remove();
+        myQueue.showList();
+
+        System.out.println("\nRemove 2");
+
+        myQueue.remove();
+        myQueue.showList();
     }
 }//End class Main
