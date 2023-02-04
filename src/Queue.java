@@ -4,11 +4,6 @@ public class Queue
     private Node head;
     private Node tail;
 
-    //Constructor
-
-    //Output method
-
-
     //The other class, yes
     private class Node
     {
@@ -62,6 +57,11 @@ public class Queue
         }//End remove method
 
         //toString
+        @Override
+        public String toString()
+        {
+            return "Data: " + data + " Next: " + next;
+        }
 
     }//End Node class
 
