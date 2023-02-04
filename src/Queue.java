@@ -43,6 +43,17 @@ public class Queue
         return data;
     }//End remove method
 
+    //Output method
+    public void showList()
+    {
+        Node position = head;
+        while (position != null)
+        {
+            System.out.println(position.getData());
+            position = position.getNext();
+        }
+    }
+
     //The other class, yes
     private class Node
     {
@@ -54,6 +65,17 @@ public class Queue
         private Node (int data)
         {
             this.data = data;
+        }
+
+        //Setters and Getters
+        public int getData()
+        {
+            return data;
+        }
+
+        public Node getNext()
+        {
+            return next;
         }
 
         //toString
