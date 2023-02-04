@@ -1,7 +1,7 @@
 public class Queue
 {
     //Variables
-    private int head;
+    private Node head;
     private Node tail;
 
     //Constructor
@@ -22,7 +22,34 @@ public class Queue
             this.data = data;
         }
 
-        //Getters and setters
+//        public boolean isEmpty()
+//        {
+//            return head = null;
+//        }
+
+        public int peek ()
+        {
+            return head.data;
+        }
+
+        public void add (int data)
+        {
+            Node node = new Node(data);
+
+            if (tail != null)
+            {
+                tail.next = node;
+            }
+
+            tail = node;
+
+            if (head == null)
+            {
+                head = node;
+            }
+        }//End add method
+
+
 
         //toString
 
